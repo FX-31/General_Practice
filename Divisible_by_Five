@@ -1,0 +1,9 @@
+
+with open('Divisible_by_Five_Input.txt','r') as data:
+    nums_txt = data.read()
+    nums = [int(x) for x in nums_txt.split()]
+
+for i in range(len(nums)):
+    if nums[i] % 5 == 0:
+        print("Divisible by 5.")
+        break
